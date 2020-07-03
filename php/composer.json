@@ -1,0 +1,12 @@
+{
+    "name": "vagrant/php",
+    "authors": [
+        {
+            "name": "shuangxijiang",
+            "email": "jiangsx@kingnet.com"
+        }
+    ],
+    "require": {
+        "yohang/finite": "^1.1"
+    }
+}
