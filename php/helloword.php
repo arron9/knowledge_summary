@@ -6,3 +6,5 @@ class HelloWorld
         echo "hello world";
     }
 }
+
+echo (new HelloWorld())->index();
