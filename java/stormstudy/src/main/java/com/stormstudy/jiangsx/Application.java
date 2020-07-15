@@ -28,7 +28,7 @@ public class Application {
             cluster = new LocalCluster();
             cluster.submitTopology("LogAnalyserStorm", config, builder.createTopology());
             Thread.sleep(10000);
-            cluster.shutdown();
+            //cluster.shutdown();
         } catch (Exception e) {
             e.printStackTrace();
         }
