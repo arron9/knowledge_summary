@@ -1,4 +1,5 @@
 <?php
+namespace App\Openssl;
 /**
  * Created by PhpStorm.
  * User: jiangsx

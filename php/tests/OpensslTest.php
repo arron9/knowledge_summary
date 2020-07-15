@@ -5,7 +5,8 @@
  * Date: 2020/7/13 0013
  * Time: 下午 7:25
  */
-require_once "BaseTest.php";
+namespace App\Tests;
+use App\Openssl\OpensslClass;
 
 class OpensslTest extends BaseTest {
     public function testPushAndPop()
