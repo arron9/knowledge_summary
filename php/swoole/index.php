@@ -11,7 +11,7 @@ require_once dirname(__DIR__) . '/bootstrap.php';
 $event->run();*/
 
 
-go(function (){
+/*go(function (){
     $redisPool = new App\Swoole\RedisPool();
     echo $redisPool->getPool();
     $redisCon = $redisPool->get();
@@ -23,7 +23,13 @@ go(function (){
     $redisPool->put($redisCon);
     echo "\n";
     echo $redisPool->getPool();
-});
+});*/
+
+/*$connectionPool = new \App\Swoole\ConnectionPool();
+$connectionPool->run();*/
+
+$websocketServer = new \App\Swoole\WebSocketServer();
+$websocketServer->run();
 
 
 

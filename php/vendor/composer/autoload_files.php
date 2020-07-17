@@ -8,4 +8,10 @@ $baseDir = dirname($vendorDir);
 return array(
     '320cde22f66dd4f5d3fd621d3e88b98f' => $vendorDir . '/symfony/polyfill-ctype/bootstrap.php',
     '6124b4c8570aa390c21fafd04a26c69f' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+    '1352d79f309fb0ce5110f973736efe4c' => $vendorDir . '/swoole/library/src/constants.php',
+    '0059c50b1e50b395050e13cfed3c20fc' => $vendorDir . '/swoole/library/src/std/exec.php',
+    '14ed4c120aa176bdf1729ce95bb05d5f' => $vendorDir . '/swoole/library/src/ext/curl.php',
+    'e7a3ca0480b5d06810fa37c4b1414724' => $vendorDir . '/swoole/library/src/functions.php',
+    '55b71bcfd58af22544c577eb0df5b9be' => $vendorDir . '/swoole/library/src/alias.php',
+    '9014ab75675af477eb5f639cc3b56167' => $vendorDir . '/swoole/library/src/alias_ns.php',
 );

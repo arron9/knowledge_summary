@@ -9,6 +9,12 @@ class ComposerStaticInit795ec8f46475f6053429349a60d07c2c
     public static $files = array (
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
+        '1352d79f309fb0ce5110f973736efe4c' => __DIR__ . '/..' . '/swoole/library/src/constants.php',
+        '0059c50b1e50b395050e13cfed3c20fc' => __DIR__ . '/..' . '/swoole/library/src/std/exec.php',
+        '14ed4c120aa176bdf1729ce95bb05d5f' => __DIR__ . '/..' . '/swoole/library/src/ext/curl.php',
+        'e7a3ca0480b5d06810fa37c4b1414724' => __DIR__ . '/..' . '/swoole/library/src/functions.php',
+        '55b71bcfd58af22544c577eb0df5b9be' => __DIR__ . '/..' . '/swoole/library/src/alias.php',
+        '9014ab75675af477eb5f639cc3b56167' => __DIR__ . '/..' . '/swoole/library/src/alias_ns.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -28,6 +34,7 @@ class ComposerStaticInit795ec8f46475f6053429349a60d07c2c
             'Symfony\\Component\\OptionsResolver\\' => 34,
             'Symfony\\Component\\Inflector\\' => 28,
             'Symfony\\Component\\EventDispatcher\\' => 34,
+            'Swoole\\' => 7,
         ),
         'P' => 
         array (
@@ -84,6 +91,10 @@ class ComposerStaticInit795ec8f46475f6053429349a60d07c2c
         'Symfony\\Component\\EventDispatcher\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
+        ),
+        'Swoole\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/swoole/library/src/core',
         ),
         'Prophecy\\' => 
         array (
