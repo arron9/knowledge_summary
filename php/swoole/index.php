@@ -28,8 +28,12 @@ $event->run();*/
 /*$connectionPool = new \App\Swoole\ConnectionPool();
 $connectionPool->run();*/
 
-$websocketServer = new \App\Swoole\WebSocketServer();
-$websocketServer->run();
+/*$websocketServer = new \App\Swoole\WebSocketServer();
+$websocketServer->run();*/
+
+
+$task = new \App\Swoole\Task();
+$task->run();
 
 
 

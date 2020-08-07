@@ -38,7 +38,14 @@ class ComposerStaticInit795ec8f46475f6053429349a60d07c2c
         ),
         'P' => 
         array (
+            'Protobuf\\' => 9,
             'Prophecy\\' => 9,
+        ),
+        'G' => 
+        array (
+            'Google\\Protobuf\\' => 16,
+            'GPBMetadata\\Google\\Protobuf\\' => 28,
+            'GPBMetadata\\' => 12,
         ),
         'F' => 
         array (
@@ -53,6 +60,7 @@ class ComposerStaticInit795ec8f46475f6053429349a60d07c2c
         array (
             'App\\Tests\\' => 10,
             'App\\Swoole\\' => 11,
+            'App\\Redis\\' => 10,
             'App\\Openssl\\' => 12,
         ),
     );
@@ -96,9 +104,25 @@ class ComposerStaticInit795ec8f46475f6053429349a60d07c2c
         array (
             0 => __DIR__ . '/..' . '/swoole/library/src/core',
         ),
+        'Protobuf\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/protobuf',
+        ),
         'Prophecy\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy',
+        ),
+        'Google\\Protobuf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/google/protobuf/src/Google/Protobuf',
+        ),
+        'GPBMetadata\\Google\\Protobuf\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/google/protobuf/src/GPBMetadata/Google/Protobuf',
+        ),
+        'GPBMetadata\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/protobuf/GPBMetadata',
         ),
         'Faker\\' => 
         array (
@@ -119,6 +143,10 @@ class ComposerStaticInit795ec8f46475f6053429349a60d07c2c
         'App\\Swoole\\' => 
         array (
             0 => __DIR__ . '/../..' . '/swoole',
+        ),
+        'App\\Redis\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/redis',
         ),
         'App\\Openssl\\' => 
         array (

@@ -23,4 +23,7 @@ $redisConn->unwatch();
 
 echo $redisConn->get("lockB");
 
+$aa = $redisConn->eval("redis.call('set', 'lua_key', 'test1'); return redis.call('get', 'lua_key')");
+var_dump($aa);exit;
+
 

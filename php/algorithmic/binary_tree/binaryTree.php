@@ -6,22 +6,21 @@ class BinTree{
 }
 
 //前序遍历生成二叉树
-function createBinTree(){
-    $handle=fopen("php://stdin","r");
-    $e=trim(fgets($handle));
-    if($e=="#"){
+function createBinTree($items) {
+    $e = array_shift($items);
+    if ($e =="#") {
         $binTree=null;
-    }else{
-        echo "e";
+    } else {
         $binTree=new BinTree();
         $binTree->data = $e;
-        $binTree->left=createBinTree();
-        $binTree->right=createBinTree();
+        $binTree->left=createBinTree($items);
+        $binTree->right=createBinTree($items);
     }
 
     return $binTree;
 }
 
-$tree=createBinTree();
+$items[] = [1, 2, 4, 8, 5, 3, 7];
+$tree=createBinTree($items);
 
 var_dump($tree);
