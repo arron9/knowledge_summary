@@ -20,8 +20,25 @@ class Client
 
         $linked->print();
     }
+
+    public function testBinaryTree()
+    {
+        $tree= new \App\Algorithmic\BinaryTree\BinaryTree(55);
+        $tree->insert(23);
+        $tree->insert(45);
+        $tree->insert(16);
+        $tree->insert(37);
+        $tree->insert(3);
+        $tree->insert(99);
+        $tree->insert(22);
+
+        $tree->print();
+
+        $tree->preOrder($tree->getRoot());
+    }
 }
 
 $client = new Client();
-$client->testLinkedList();
+//$client->testLinkedList();
+$client->testBinaryTree();
 
