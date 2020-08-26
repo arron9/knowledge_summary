@@ -27,4 +27,5 @@ return array(
     'App\\Swoole\\' => array($baseDir . '/swoole'),
     'App\\Redis\\' => array($baseDir . '/redis'),
     'App\\Openssl\\' => array($baseDir . '/openssl'),
+    'App\\Algorithmic\\' => array($baseDir . '/algorithmic'),
 );

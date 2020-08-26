@@ -62,6 +62,7 @@ class ComposerStaticInit795ec8f46475f6053429349a60d07c2c
             'App\\Swoole\\' => 11,
             'App\\Redis\\' => 10,
             'App\\Openssl\\' => 12,
+            'App\\Algorithmic\\' => 16,
         ),
     );
 
@@ -151,6 +152,10 @@ class ComposerStaticInit795ec8f46475f6053429349a60d07c2c
         'App\\Openssl\\' => 
         array (
             0 => __DIR__ . '/../..' . '/openssl',
+        ),
+        'App\\Algorithmic\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/algorithmic',
         ),
     );
 

@@ -23,6 +23,7 @@
       "App\\Swoole\\": "swoole/",
       "App\\Openssl\\": "openssl/",
       "App\\Redis\\": "redis/",
+      "App\\Algorithmic\\": "algorithmic/",
       "Protobuf\\" : "protobuf/",
       "GPBMetadata\\" : "protobuf/GPBMetadata"
     }

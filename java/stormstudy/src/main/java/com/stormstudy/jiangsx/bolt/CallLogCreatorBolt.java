@@ -10,11 +10,13 @@ import org.apache.storm.topology.OutputFieldsDeclarer;
 import org.apache.storm.tuple.Fields;
 import org.apache.storm.tuple.Tuple;
 import org.apache.storm.tuple.Values;
+import sun.misc.Unsafe;
 
 //Create a class CallLogCreatorBolt which implement IRichBolt interface
 public class CallLogCreatorBolt implements IRichBolt {
     //Create instance for OutputCollector which collects and emits tuples to produce output
     private OutputCollector collector;
+    static final Unsafe theUnsafe = new Unsafe();
 
     @Override
     public void prepare(Map conf, TopologyContext context, OutputCollector collector) {
@@ -40,5 +42,9 @@ public class CallLogCreatorBolt implements IRichBolt {
     @Override
     public Map<String, Object> getComponentConfiguration() {
         return null;
+    }
+
+    public final int incrementAndGet() {
+        return Unsafe.getAndAddInt(this, valueOffset, 1) + 1;
     }
 }
