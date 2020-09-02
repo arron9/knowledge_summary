@@ -69,9 +69,29 @@ class Sort
         return $this;
     }
 
-    public function binary($data)
+    public function quick($data)
     {
+        if (!isset($data[1])) {
+            return $data;
+        }
 
+        $pvoit = $data[0];
+        $left = [];
+        $right =  [];
+
+        foreach ($data as $v) {
+            if ($v > $pvoit) {
+                $right[] = $v;
+            } elseif ($v < $pvoit) {
+                $left[] = $v;
+            }
+        }
+
+        $left = $this->quick($left);
+        $left[] = $pvoit;
+        $right = $this->quick($right);
+
+        return array_merge($left, $right);
     }
 
     /**

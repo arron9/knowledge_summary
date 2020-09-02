@@ -36,9 +36,17 @@ class Client
 
         $tree->preOrder($tree->getRoot());
     }
+
+    public function testSort()
+    {
+        $sort = new \App\Algorithmic\Sorts\Sort();
+        $data = [3,1,2,4,5,11,7,65,9];
+        $res = $sort->quick($data);
+        var_dump($res);exit;
+    }
 }
 
 $client = new Client();
 //$client->testLinkedList();
-$client->testBinaryTree();
+$client->testSort();
 
