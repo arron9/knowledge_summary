@@ -5,10 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.javastudy.jiangsx</groupId>
     <artifactId>javastudy</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
     <modules>
         <module>stormstudy</module>
+        <module>lucene</module>
     </modules>
 
     <name>java-study</name>
